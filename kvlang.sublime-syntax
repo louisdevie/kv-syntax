@@ -1,3 +1,5 @@
+%YAML 1.4
+---
 # Kv Language syntax highlight for Sublime Text 3
 # It's in the public domain (see https://creativecommons.org/publicdomain/zero/1.0/ for more information)
 # Installation:
@@ -5,9 +7,6 @@
 # - In Sublime Text, go to **Preferences** > **Browse Packages**
 # - Open the "User" folder
 # - Put `kvlang.sublime-syntax` 
-
-%YAML 1.4
----
 name: Kv Language
 file_extensions: 
   - kv
