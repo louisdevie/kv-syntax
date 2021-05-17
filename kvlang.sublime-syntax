@@ -1,0 +1,135 @@
+# Kv Language syntax highlight for Sublime Text 3
+# It's in the public domain (see https://creativecommons.org/publicdomain/zero/1.0/ for more information)
+# Installation:
+# - Download `kvlang.sublime-syntax`
+# - In Sublime Text, go to **Preferences** > **Browse Packages**
+# - Open the "User" folder
+# - Put `kvlang.sublime-syntax` 
+
+%YAML 1.4
+---
+name: Kv Language
+file_extensions: 
+  - kv
+# if the file isn't a .kv file but starts with a "#: kivy", treat it as kv anyway
+first_line_match: '#: kivy \d(\.\d+(\.\d+)?)?'
+scope: source.kv
+
+contexts:
+  main:
+    # version directive (#: kivy X.X.X)
+    - match: ^#:\s*kivy\s+
+      scope: keyword.control.kv
+      push:
+        - meta_scope: keyword.control.kv
+        - match: \d+(\.\d+(\.\d+)?)?$
+          scope: constant.numeric.kv
+          pop: true
+        - match: .*?$
+          scope: invalid.illegal.kv
+          pop: true
+
+    # importing a constant (#: import myconst package.module.class)
+    - match: ^#:\s*import\s+
+      scope: keyword.control.kv
+      push:
+        - meta_scope: meta.namespace.kv
+        - match: \w+\s+
+          scope: entity.name.constant.kv
+          set:
+            - match: '[\.\w]+\s+$'
+              scope: variable.other.kv
+              pop: true
+            - match: .*?$
+              scope: invalid.illegal.kv
+              pop: true
+        - match: .*?$
+          scope: invalid.illegal.kv
+          pop: true
+
+    # defining a constant from a python literal (#: set myconst val)
+    - match: ^#:\s*set\s+
+      scope: keyword.control.kv
+      push:
+        - meta_scope: meta.namespace.kv
+        - match: \w+\s+
+          scope: entity.name.constant
+          set: Packages/Python/Python.sublime-syntax
+          with_prototype:
+            - match: $
+              pop: true
+        - match: .*?$
+          scope: invalid.illegal.kv
+          pop: true
+
+    # invalid "#:" 
+    - match: ^#:.*?$
+      scope: invalid.illegal.kv
+
+    # class rules
+    - match: ^<-?\b\w+\b
+      scope: support.class.kv
+      push:
+        - match: '@\w+'
+          scope: entity.other.inherited-class.kv
+          set:
+            - match: ',\s*\w+'
+              scope: entity.other.inherited-class.kv
+            - match: '>:?'
+              scope: support.class.kv
+              pop: true
+        - match: ',\s*\w+'
+          scope: support.class.kv
+        - match: '>:?'
+          scope: support.class.kv
+          pop: true
+        - match: .+
+          scope: invalid.illegal.kv
+          pop: true
+
+    # classes
+    - match: ^\s*\b[A-Z]\w*\b:?\s*$
+      scope: entity.name.class.kv
+
+    # canvas
+    - match: ^\s*\bcanvas(.(after|before))?\b:\s*$
+      scope: support.function.kv
+
+    # id
+    - match: ^\s*\bid\b:\s*
+      scope: support.function.kv
+      push:
+        - match: \b\w+\b\s*$
+          scope: string.kv
+          pop: true
+        - match: $
+          pop: true
+        - match: .*$
+          scope: invalid.illegal.kv
+          pop: true
+
+    # multi-line properties
+    - match: '^\s*-?\b\w+\b:\s*$'
+      scope: support.function.kv
+      set: Packages/Python/Python.sublime-syntax
+      with_prototype:
+        # add "app", "root" and "args" to python's language variables
+        - match: \b(app|root|args)\b
+          scope: variable.language.kv
+        - match: ^\s*$
+          pop: true
+
+    # single-line properties
+    - match: '^\s*-?\b\w+\b:'
+      scope: support.function.kv
+      set: Packages/Python/Python.sublime-syntax
+      with_prototype:
+        # add "app", "root" and "args" to python's language variables
+        - match: \b(app|root|args)\b
+          scope: variable.language.kv
+        - match: $
+          pop: true
+
+    # comments
+    - match: '#.*'
+      scope: comment.line.kv
