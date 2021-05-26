@@ -6,10 +6,10 @@
 ### Installation:
 - Download this repo
 - In Sublime Text, go to **Preferences** > **Browse Packages**
-- Open the "User" folder
+- Open the `User` folder
 - Put the whole `kvlang` folder here
 
 ### Features
-- Syntax highlight (automatic on .kv files and thoses wich starts by "#:kivy [...]") following the [kivy documentation](https://kivy.org/doc/stable/guide/lang.html)
+- Syntax highlight (automatic on `*.kv` files and thoses wich starts by `#:kivy [...]`) following the [kivy documentation](https://kivy.org/doc/stable/guide/lang.html)
 - Automatic indentation after a line ending with a colon
 - Snippets for [UX Widgets and Layouts (except ScatterLayout)](https://kivy.org/doc/stable/api-kivy.uix.html)
