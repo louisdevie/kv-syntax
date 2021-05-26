@@ -13,3 +13,4 @@
 - Syntax highlight (automatic on `*.kv` files and those wich starts by `#:kivy [...]`) following the [kivy documentation](https://kivy.org/doc/stable/guide/lang.html)
 - Automatic indentation after a line ending with a colon
 - Snippets for [UX Widgets and Layouts (except ScatterLayout)](https://kivy.org/doc/stable/api-kivy.uix.html)
+- Highlight and indentation should work with KivyMD as well, except yout won't have any snippets.
