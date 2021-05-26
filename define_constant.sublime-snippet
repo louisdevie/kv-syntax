@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+#: set ${1:name} ${2:"value"}
+]]></content>
+	<tabTrigger>#:set</tabTrigger>
+	<scope>source.kv</scope>
+	<description>define constant</description>
+</snippet>

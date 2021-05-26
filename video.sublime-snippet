@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Video:
+	
+]]></content>
+	<tabTrigger>Video:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>video widget</description>
+</snippet>

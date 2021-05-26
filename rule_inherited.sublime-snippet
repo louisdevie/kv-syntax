@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<${1:Class}@${2:Super}>:
+]]></content>
+	<tabTrigger>inherited</tabTrigger>
+	<scope>source.kv</scope>
+	<description>inherited class rule</description>
+</snippet>

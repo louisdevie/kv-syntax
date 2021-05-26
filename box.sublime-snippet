@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+BoxLayout:
+	orientation: "${1:vertical}"
+
+	
+]]></content>
+	<tabTrigger>BoxLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>box layout</description>
+</snippet>

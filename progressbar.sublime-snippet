@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+ProgressBar:
+	max: ${1:100}
+]]></content>
+	<tabTrigger>ProgressBar:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>progress bar widget</description>
+</snippet>

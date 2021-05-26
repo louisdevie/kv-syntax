@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Label:
+	text: "${1:Hello, World!}"
+]]></content>
+	<tabTrigger>Label:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>label widget</description>
+</snippet>

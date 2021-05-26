@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+Button:
+	text: "${1:Click me!}"
+	on_press: ${2:pass}
+]]></content>
+	<tabTrigger>Button:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>button widget</description>
+</snippet>

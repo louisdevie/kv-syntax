@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+ToggleButton:
+	text: "${1:Option ...}"
+	group: "${2:tabs}"
+]]></content>
+	<tabTrigger>ToggleButton:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>toggle button widget</description>
+</snippet>

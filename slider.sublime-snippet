@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+Slider:
+	min: ${1:0}
+	max: ${2:100}
+	step: ${3:1}
+	orientation: "${4:vertical}"
+]]></content>
+	<tabTrigger>Slider:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>slider widget</description>
+</snippet>

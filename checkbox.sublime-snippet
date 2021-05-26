@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+CheckBox:
+	
+]]></content>
+	<tabTrigger>CheckBox:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>checkbox widget</description>
+</snippet>

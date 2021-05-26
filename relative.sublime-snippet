@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+StackLayout:
+	orientation: "${1:lr}-${2:tb}" 
+
+	
+]]></content>
+	<tabTrigger>StackLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>stack layout</description>
+</snippet>

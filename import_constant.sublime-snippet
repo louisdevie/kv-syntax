@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+#: import ${1:name} ${2:module}
+]]></content>
+	<tabTrigger>#:import</tabTrigger>
+	<scope>source.kv</scope>
+	<description>import constant</description>
+</snippet>

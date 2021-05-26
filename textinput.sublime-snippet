@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+TextInput:
+	hint_text: "${1:Text...}"
+]]></content>
+	<tabTrigger>TextInput:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>text input widget</description>
+</snippet>

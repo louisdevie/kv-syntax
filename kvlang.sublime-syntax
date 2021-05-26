@@ -1,17 +1,10 @@
 %YAML 1.4
 ---
-# Kv Language syntax highlight for Sublime Text 3
-# It's in the public domain (see https://creativecommons.org/publicdomain/zero/1.0/ for more information)
-# Installation:
-# - Download `kvlang.sublime-syntax`
-# - In Sublime Text, go to **Preferences** > **Browse Packages**
-# - Open the "User" folder
-# - Put `kvlang.sublime-syntax` 
 name: Kv Language
 file_extensions: 
   - kv
 # if the file isn't a .kv file but starts with a "#: kivy", treat it as kv anyway
-first_line_match: '#: kivy \d(\.\d+(\.\d+)?)?'
+first_line_match: '#: kivy.*'
 scope: source.kv
 
 contexts:

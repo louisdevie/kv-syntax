@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+Switch:
+	${1:active: True}
+]]></content>
+	<tabTrigger>Switch:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>switch widget</description>
+</snippet>

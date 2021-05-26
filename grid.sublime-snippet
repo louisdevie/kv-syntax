@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+GridLayout:
+	
+]]></content>
+	<tabTrigger>GridLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>grid layout</description>
+</snippet>

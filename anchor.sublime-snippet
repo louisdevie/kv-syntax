@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+AnchorLayout:
+	anchor_x: "${1:center}"
+	anchor_y: "${2:center}"
+
+	
+]]></content>
+	<tabTrigger>AnchorLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>anchor layout</description>
+</snippet>

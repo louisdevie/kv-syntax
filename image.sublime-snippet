@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+Image:
+	source: "${1:picture.png}"
+	size: ${2:self.texture_size}
+]]></content>
+	<tabTrigger>Image:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>image widget</description>
+</snippet>

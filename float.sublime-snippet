@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+FloatLayout:
+	
+]]></content>
+	<tabTrigger>FloatLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>floating layout</description>
+</snippet>

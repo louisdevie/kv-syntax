@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+PageLayout:
+	
+]]></content>
+	<tabTrigger>PageLayout:</tabTrigger>
+	<scope>source.kv</scope>
+	<description>page layout</description>
+</snippet>
