@@ -1,7 +1,7 @@
 # kv-syntax
 ### Kv Language package for Sublime Text 3/4
 
-### This is in the public domain (see the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) for more information)
+### It's in the public domain (see the [CC0](https://creativecommons.org/publicdomain/zero/1.0/) for more information)
 
 ### Installation:
 - Download this repo
